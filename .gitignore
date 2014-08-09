@@ -1,0 +1,11 @@
+*.o
+/bin/*.exe
+*.obj
+*.tlog
+/vs2012/Debug
+/vs2012/Release
+/bin/Ogre.log
+/bin/ogre.cfg
+/vs2012/UOgre.opensdf
+/vs2012/*.sdf
+/vs2012/*.suo

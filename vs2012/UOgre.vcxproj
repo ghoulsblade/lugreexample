@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42652AA9-CA00-4361-8847-F81A5DEDAA8A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>UOgre</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OGRE_HOME)\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;$(OGRE_HOME)\include\OGRE\Overlay;$(ProjectDir)../include;$(ProjectDir)../lua-5.2.3;$(ProjectDir)../lugre/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\$(Configuration);$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;OgreOverlay_d.lib;WSock32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(OGRE_HOME)\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;$(OGRE_HOME)\include\OGRE\Overlay;$(ProjectDir)../include;$(ProjectDir)../lua-5.2.3;$(ProjectDir)../lugre/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)\lib\$(Configuration);$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;OgreOverlay.lib;WSock32.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)../bin/$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lua-5.2.3\lapi.c" />
+    <ClCompile Include="..\lua-5.2.3\lauxlib.c" />
+    <ClCompile Include="..\lua-5.2.3\lbaselib.c" />
+    <ClCompile Include="..\lua-5.2.3\lbitlib.c" />
+    <ClCompile Include="..\lua-5.2.3\lcode.c" />
+    <ClCompile Include="..\lua-5.2.3\lcorolib.c" />
+    <ClCompile Include="..\lua-5.2.3\lctype.c" />
+    <ClCompile Include="..\lua-5.2.3\ldblib.c" />
+    <ClCompile Include="..\lua-5.2.3\ldebug.c" />
+    <ClCompile Include="..\lua-5.2.3\ldo.c" />
+    <ClCompile Include="..\lua-5.2.3\ldump.c" />
+    <ClCompile Include="..\lua-5.2.3\lfunc.c" />
+    <ClCompile Include="..\lua-5.2.3\lgc.c" />
+    <ClCompile Include="..\lua-5.2.3\linit.c" />
+    <ClCompile Include="..\lua-5.2.3\liolib.c" />
+    <ClCompile Include="..\lua-5.2.3\llex.c" />
+    <ClCompile Include="..\lua-5.2.3\lmathlib.c" />
+    <ClCompile Include="..\lua-5.2.3\lmem.c" />
+    <ClCompile Include="..\lua-5.2.3\loadlib.c" />
+    <ClCompile Include="..\lua-5.2.3\lobject.c" />
+    <ClCompile Include="..\lua-5.2.3\lopcodes.c" />
+    <ClCompile Include="..\lua-5.2.3\loslib.c" />
+    <ClCompile Include="..\lua-5.2.3\lparser.c" />
+    <ClCompile Include="..\lua-5.2.3\lstate.c" />
+    <ClCompile Include="..\lua-5.2.3\lstring.c" />
+    <ClCompile Include="..\lua-5.2.3\lstrlib.c" />
+    <ClCompile Include="..\lua-5.2.3\ltable.c" />
+    <ClCompile Include="..\lua-5.2.3\ltablib.c" />
+    <ClCompile Include="..\lua-5.2.3\ltm.c" />
+    <ClCompile Include="..\lua-5.2.3\lundump.c" />
+    <ClCompile Include="..\lua-5.2.3\lvm.c" />
+    <ClCompile Include="..\lua-5.2.3\lzio.c" />
+    <ClCompile Include="..\lugre\src\lugre_beam.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_beam_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_bitmask.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_bitmask_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_BorderColourClipPaneOverlay.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_cadune_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_caelum_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_camera_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_ColourClipPaneOverlay.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_ColourClipTextOverlay.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_commondialog.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_CompassOverlay.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_fastbatch.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_fifo_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_findpath.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_game.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_gfx2D.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_gfx2D_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_gfx3D.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_gfx3D_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_image_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_input.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_listener.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_luabinds_ogre.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_luaxml.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_main.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_material_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_md5_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_meshbuffer.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_meshbuffer_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_meshloader.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_meshshape.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_net.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_net_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_ode.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_ode_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_ogrewrapper.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_paged_geometry_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_profile.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_random.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_random_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_rendertexture_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_robrenderable.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_RobRenderableOverlay.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_robstring.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_scripting.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_scripting.general.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_scripting.ogre.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_shell.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_SortedOverlayContainer.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_sound.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_sound_fmod.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_sound_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_sound_openal.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_sound_openal2.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_spritelist.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_spritelist_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_texatlas.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_texatlas_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_thread.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_thread_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_timer.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_transform_mesh.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_utils.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_vertexbuffer_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_viewport_L.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_widget.cpp" />
+    <ClCompile Include="..\lugre\src\lugre_widget_L.cpp" />
+    <ClCompile Include="..\lugre\src\nedmalloc.c" />
+    <ClCompile Include="..\lugre\src\tinystr.cpp" />
+    <ClCompile Include="..\lugre\src\tinyxml.cpp" />
+    <ClCompile Include="..\lugre\src\tinyxmlerror.cpp" />
+    <ClCompile Include="..\lugre\src\tinyxmlparser.cpp" />
+    <ClCompile Include="..\src\BaseApplication.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\TutorialApplication.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\lugre\lib\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

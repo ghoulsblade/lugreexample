@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{2113090f-ee25-42ce-937e-eb662336559b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lugre">
+      <UniqueIdentifier>{78c970ac-b20e-4633-a53d-9e38ff2adc94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\BaseApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TutorialApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lapi.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lauxlib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lbaselib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lbitlib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lcode.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lcorolib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lctype.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ldblib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ldebug.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ldo.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ldump.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lfunc.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lgc.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\linit.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\liolib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\llex.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lmathlib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lmem.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\loadlib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lobject.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lopcodes.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\loslib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lparser.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lstate.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lstring.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lstrlib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ltable.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ltablib.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\ltm.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lundump.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lvm.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lua-5.2.3\lzio.c">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_beam.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_beam_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_bitmask.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_bitmask_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_BorderColourClipPaneOverlay.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_cadune_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_caelum_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_camera_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_ColourClipPaneOverlay.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_ColourClipTextOverlay.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_commondialog.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_CompassOverlay.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_fastbatch.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_fifo_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_findpath.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_game.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_gfx2D.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_gfx2D_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_gfx3D.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_gfx3D_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_image_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_input.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_listener.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_luabinds_ogre.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_luaxml.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_main.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_material_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_md5_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_meshbuffer.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_meshbuffer_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_meshloader.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_meshshape.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_net.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_net_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_ode.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_ode_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_ogrewrapper.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_paged_geometry_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_profile.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_random.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_random_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_rendertexture_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_robrenderable.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_RobRenderableOverlay.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_robstring.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_scripting.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_scripting.general.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_scripting.ogre.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_shell.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_SortedOverlayContainer.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_sound.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_sound_fmod.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_sound_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_sound_openal.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_sound_openal2.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_spritelist.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_spritelist_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_texatlas.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_texatlas_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_thread.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_thread_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_timer.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_transform_mesh.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_utils.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_vertexbuffer_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_viewport_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_widget.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\lugre_widget_L.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\nedmalloc.c">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\tinystr.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\tinyxml.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\tinyxmlerror.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lugre\src\tinyxmlparser.cpp">
+      <Filter>lugre</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\lugre\lib\zlib.lib">
+      <Filter>lugre</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
