@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{42652AA9-CA00-4361-8847-F81A5DEDAA8A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>UOgre</RootNamespace>
+    <RootNamespace>LugreExample</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -183,7 +183,6 @@
     <ClCompile Include="..\lugre\src\lugre_viewport_L.cpp" />
     <ClCompile Include="..\lugre\src\lugre_widget.cpp" />
     <ClCompile Include="..\lugre\src\lugre_widget_L.cpp" />
-    <ClCompile Include="..\lugre\src\nedmalloc.c" />
     <ClCompile Include="..\lugre\src\tinystr.cpp" />
     <ClCompile Include="..\lugre\src\tinyxml.cpp" />
     <ClCompile Include="..\lugre\src\tinyxmlerror.cpp" />
